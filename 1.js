@@ -1,16 +1,16 @@
 function myMove1() {
     var elem = document.getElementById("myAnimation");
-    elem.style.backgroundSize = '300px';
+    elem.style.backgroundSize = '400px';
     elem.style.backgroundImage = 'url("https://www.uokpl.rs/fpng/f/430-4305418_international-space-station.png")';
   var pos = 350;
   var id = setInterval(frame, 10);
   function frame() {
     document.getElementById("myContainer").style.backgroundImage = "";
-    if (pos == 0) {
+    if (pos == 150) {
       clearInterval(id);
       elem.style.backgroundImage = "";
-        document.getElementById("myContainer").style.backgroundImage = 'url("https://www.uokpl.rs/fpng/f/430-4305418_international-space-station.png")';
-        document.getElementById("myContainer").style.backgroundSize = '300px';
+        document.getElementById("myContainer").style.backgroundImage = 'url("iss.png")';
+        document.getElementById("myContainer").style.backgroundSize = '600px';
     } else {
       pos--; 
       elem.style.top = pos + 'px'; 
