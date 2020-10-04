@@ -145,12 +145,10 @@ html{
 }
 
 #myContainer {
-	width: 600px;
-	height: 600px;
-	right: 30%;
-	bottom: 40px;
-	position: relative;
-	background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  position: relative; 
+  background-repeat: no-repeat;
 }
 
 #myAnimation {
