@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
 *{
 	margin:0;
 	padding: 0;
@@ -15,9 +16,9 @@ html{
 	width: 100%;
 	display: flex;
 	padding: 100px 0;
-	background-image: url("http://clipart-library.com/images_k/galaxy-png-transparent/galaxy-png-transparent-9.png"),linear-gradient(to right bottom, #000000, #1a000d, #25001b, #2c002b, #2d0041, #321861, #2c3083, #0048a6, #0078cd, #00a5e3, #00d1ec, #5ffbf1);
-	background-repeat: no-repeat;
-	background-size: 500px, auto;
+	background-image: url("https://wallpapercave.com/wp/wp3284832.gif");
+	background-repeat: repeat-y;
+	background-size: auto;
 }
 
 .timeline{
@@ -32,12 +33,35 @@ html{
 	list-style: none ;
 }
 
-.timeline ul li{
-	padding: 20px;
+.timeline ul .li-2{
+	padding: 10px;
 	background-color: #1e1f22;
+	opacity: 0.6;
 	color: #F8F8FF;
 	border-radius: 10px;
 	margin-bottom: 20px;
+}
+
+.timeline ul .li-long{
+	padding: 10px;
+	background-color: #1e1f22;
+	opacity: 0.6;
+	color: #F8F8FF;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.timeline ul .li-1{
+	padding: 10px;
+	background-color: #1e1f22;
+	opacity: 0.6;
+	color: #FF0D39;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.timeline ul li:hover {
+  opacity: 1.0;
 }
 
 .timeline ul li: last-child{
@@ -48,13 +72,20 @@ html{
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 .timeline-content p{
 	font-size: 11px;
 	line-height: 20px;
 	font-weight: 300;
+}
+
+.timeline-inner h1{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	margin-bottom: 10px;
 }
 
 @media only screen and (min-width:768px){
@@ -65,13 +96,23 @@ html{
 		width:2px;
 		background-color:red;
 	}
-	.timeline ul li{
-		width: 50%;
+
+	.timeline ul .li-2{
+		width: 13%;
 		margin-bottom: 50px;
 		position: relative;
-		transform: translateX(30px);
-		border-radius: 0px 20px 20px 20px;
+		transform: translateX(40px);
+		border-radius: 0px 10px 10px 10px;
 	}
+
+	.timeline ul .li-1{
+		width: 35%;
+		margin-bottom: 50px;
+		position: relative;
+		transform: translateX(40px);
+		border-radius: 0px 10px 10px 10px;
+	}
+
 	.timeline ul li::after{
 		content:'';
 		position: absolute;
@@ -84,6 +125,17 @@ html{
 		border-radius: 30px;
 		}
 		
+	.timeline ul .li-1::after{
+		content:'';
+		position: absolute;
+		height: 2px;
+		width: 10px;
+		top:0;
+		transform: translate(-44%,-44%);
+		left: -34px;
+		background-color: red;
+		border-radius: 30px;
+		}
 }
 
 .earth{
@@ -96,15 +148,13 @@ html{
   width: 400px;
   height: 400px;
   position: relative; 
+  background-repeat: no-repeat;
 }
 
 #myAnimation {
-  width: 500px;
-  height: 500px;
-  overflow-wrap: auto;
+  width: 400px;
+  height: 400px;
   position: absolute;
-  background-image: url("https://www.uokpl.rs/fpng/f/430-4305418_international-space-station.png");
-  background-size: 300px;
   background-repeat:no-repeat;
   bottom:0%;
   right:0%;
@@ -114,4 +164,49 @@ html{
 	position: fixed;
 	top:25%;
 	left:50%;
+}
+
+.timeline-content .tooltiptext {
+  visibility: hidden;
+  width: 480px;
+  text-align: center;
+  border-radius: 0px 10px 10px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+  padding: 10px;
+ 	background-color: #1e1f22;
+	opacity: 1;
+	color: #F8F8FF;
+	margin-bottom: 20px;
+	font-size: 11px;
+	line-height: 20px;
+	font-weight: 300;
+}
+
+.timeline-content .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.timeline-content:hover .tooltiptext {
+  visibility: visible;
+}
+
+#sci-image{
+	width: 700px;
+  height: 700px;
+  position: relative; 
+  background-repeat: no-repeat;
+  left:0%;
+  }
+
+hr{
+	width:1505px;
 }
