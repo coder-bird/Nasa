@@ -9,8 +9,7 @@ function myMove1() {
     if (pos == 0) {
       clearInterval(id);
       elem.style.backgroundImage = "";
-        document.getElementById("myContainer").style.backgroundImage = 'url("https://www.uokpl.rs/fpng/f/430-4305418_international-space-station.png")';
-        document.getElementById("myContainer").style.backgroundSize = '300px';
+      document.getElementById("myContainer").style.backgroundImage = 'url("https://www.uokpl.rs/fpng/f/430-4305418_international-space-station.png")';
     } else {
       pos--; 
       elem.style.top = pos + 'px'; 
