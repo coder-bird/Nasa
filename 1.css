@@ -16,7 +16,7 @@ html{
 	width: 100%;
 	display: flex;
 	padding: 100px 0;
-	background-image: url("https://wallpapercave.com/wp/wp3284832.gif");
+	background-image: url("background.jpg");
 	background-repeat: repeat-y;
 	background-size: auto;
 }
@@ -55,7 +55,7 @@ html{
 	padding: 10px;
 	background-color: #1e1f22;
 	opacity: 0.6;
-	color: #FF0D39;
+	color: white;
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
@@ -94,7 +94,7 @@ html{
 		position: absolute;
 		height: 100%;
 		width:2px;
-		background-color:red;
+		background-color:white;
 	}
 
 	.timeline ul .li-2{
@@ -121,7 +121,7 @@ html{
 		top:0;
 		transform: translate(-44%,-44%);
 		left: -30px;
-		background-color: red;
+		background-color: white;
 		border-radius: 30px;
 		}
 		
@@ -133,7 +133,7 @@ html{
 		top:0;
 		transform: translate(-44%,-44%);
 		left: -34px;
-		background-color: red;
+		background-color: white;
 		border-radius: 30px;
 		}
 }
@@ -145,10 +145,12 @@ html{
 }
 
 #myContainer {
-  width: 400px;
-  height: 400px;
-  position: relative; 
-  background-repeat: no-repeat;
+	width: 600px;
+	height: 600px;
+	right: 30%;
+	bottom: 40px;
+	position: relative;
+	background-repeat: no-repeat;
 }
 
 #myAnimation {
@@ -209,4 +211,30 @@ html{
 
 hr{
 	width:1505px;
+	sty
 }
+
+#loader {
+  position: absolute;
+  z-index:1;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 4s;
+  animation-name: animatebottom;
+  animation-duration: 4s
+}
+
+
